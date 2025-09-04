@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Install deps",
+        "type": "shell",
+        "command": "pip install -r requirements.txt",
+        "problemMatcher": []
+      },
+      {
+        "label": "Build binary (pyinstaller)",
+        "type": "shell",
+        "command": "pyinstaller --onefile --name aicommit src/ai_commit.py",
+        "problemMatcher": [],
+        "dependsOn": "Install deps"
+      }
+    ]
+  }
+  

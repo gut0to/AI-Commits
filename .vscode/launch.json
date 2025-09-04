@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "AI Commit (staged, pt-BR, chore)",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/src/ai_commit.py",
+        "console": "integratedTerminal",
+        "args": ["--type", "chore", "--lang", "pt-BR"]
+      },
+      {
+        "name": "AI Commit (unstaged, en, feat)",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/src/ai_commit.py",
+        "console": "integratedTerminal",
+        "args": ["--unstaged", "--type", "feat", "--lang", "en"]
+      }
+    ]
+  }
+  
